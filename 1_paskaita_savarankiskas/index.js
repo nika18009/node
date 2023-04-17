@@ -35,12 +35,12 @@ app.get("/randomPlaces", (req, res)=>{
   const number = Math.floor(Math.random() * 5 + 1)
 
   for (let i= 0; i <number; i++){
-    const user = {
+    const place = {
       country: `${casual.country}`,
       city: `${casual.city}`,
       address: `${casual.address}`
     }
-    places.push(user)
+    places.push(place)
   }
   res.send(places); 
 })
