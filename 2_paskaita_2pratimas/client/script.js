@@ -4,7 +4,7 @@ fetch("http://localhost:3000/products")
        const productList = document.querySelector("#products");
         response.forEach(name => {
         const li = document.createElement("li");
-        li.textContent= `product: ${name.name}; price: ${name.price}eu`;
+        li.textContent= `product: ${name.name} price: ${name.price}eu`;
         productList.append(li)
        });
     })
@@ -24,7 +24,10 @@ productButton.addEventListener("click", ()=>{
         "Content-Type": "application/json" 
     }, 
     body: JSON.stringify({productnameInput,productpriceInput}) 
-}).then(()=>{
+})
+// .then((res)=>res.json())
+.then(()=>{
+    // console.log(response)
     location.reload()
 })
 })

@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require("cors");
 const app = express();
+
 app.use(cors());
 app.use(express.json());
 
@@ -18,7 +19,7 @@ app.post("/products", (req,res)=>{
         price: `${req.body.productpriceInput}`,
     }
     products.push(newproduct);
-    res.send(req.body)
+    res.send({name:"hi"})
 })
 
 
