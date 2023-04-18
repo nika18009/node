@@ -1,0 +1,12 @@
+thead tr th{
+    
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+td, th{
+    border: 2px solid rgba(255, 192, 203, 0.432);
+}
+table{
+    border-collapse: collapse;  
+}
