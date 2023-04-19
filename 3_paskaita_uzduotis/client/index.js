@@ -19,8 +19,7 @@ function createEle(data){
     password.textContent = `${data.password}`
     email.textContent = `${data.email}`
     name.textContent = `${data.name}`
-    
-
+  
     tableRow.append(password, email, name)
   
     return tableRow
