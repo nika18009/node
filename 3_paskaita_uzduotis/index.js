@@ -27,14 +27,11 @@ app.post("/users", (req,res)=>{
 })
 
 app.post("/login", (req,res)=>{
-    const newUser = {
-        password: `${req.body.passwordInput}`,
-        email: `${req.body.emailInput}`,  
-    }
+    
     fetch("http://localhost:3000/")
     .then((res)=>res.json())
     .then(data =>{
-        if (data.some(user => user.email == newUser.email && user.password == newUser.password )){
+        if (data.some(user => user.email == req.body.emailInput && user.password == req.body.passwordInput )){
             res.send({message: "Sveiki prisijungę"})
         } else{
             res.send({message: "Netinkamas el.paštas arba slaptažodis"})

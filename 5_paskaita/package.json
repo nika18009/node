@@ -1,0 +1,13 @@
+{
+    "title": "5 paskaita: papildomi moduliai",
+    "version": "0.1",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.18.2",
+        "nodemon": "^2.0.22"
+    }
+}
