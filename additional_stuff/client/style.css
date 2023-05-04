@@ -1,0 +1,60 @@
+main {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+body{
+    background-color: rgba(128, 0, 128, 0.39);
+}
+span{
+    background-color: pink;
+    font-weight: bold;
+}
+.readOnly:read-only{
+   background-color: rgba(113, 198, 231, 0.247);
+}
+.borderChange:{
+    margin: 0 0 10px 0;
+    height: 18px;
+    border: 2px solid;
+    border-color: skyblue skyblue skyblue rgb(228, 230, 95);
+}
+.borderChange2{
+    border: 2px solid;
+    border-color: rgb(235, 115, 219);
+    margin: 0 0 10px 0;
+}
+.submit{
+    background-color: rgba(255, 192, 203, 0.582);
+    border: 2px solid rgba(255, 192, 203, 0.253);
+    color: white;
+    font-weight: bold;
+}
+.submit:hover{
+    background-color: purple;
+}
+.tacbox {
+    display:block;
+    max-width: 400px;
+    margin-bottom: 10px;
+  }
+  .age:out-of-range {
+    border: 3px solid;
+    border-color: red red red rgb(228, 230, 95);
+   }
+   .age:in-range{
+    border: 2px solid rgb(235, 115, 219);
+   }
+   
+   .invalidValid:invalid{
+    border: 3px solid;
+    border-color: red red red rgb(228, 230, 95);
+   }
+   .invalidValid:valid{
+    border: 2px solid rgb(235, 115, 219);
+   }
+   input[type="checkbox"]:checked+label{
+    color: purple;
+   }
+  

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+      <h1>Register to a "Fancy" Form</h1>
+          <p> All fields are <span>required</span> unless marked as "optional"</p>
+          <form action="">
+          <label for="name">Your unique ID that you can't change</label>
+          <input class="readOnly borderChange" type="text" id="name" name="name" value="1D22789" readonly>
+          <div class="form-example">
+              <label for="email">Email:</label> 
+              <br>
+              <input class="borderChange invalidValid" type="email" name="email" id="email" required>
+            </div>
+            <div>
+              <label for="pass">Password:</label>
+               <br>
+              <input class="borderChange invalidValid" type="password" id="pass" name="password"
+                     minlength="8" required>
+              </div>
+              <div>
+                <label for="pass">Repeat Password:</label>
+                 <br>
+                <input class="borderChange invalidValid" type="password" id="rpass" name="Password"
+                       minlength="8" required>
+                </div>
+              <div>
+                  <label for="age">Age:</label>
+                  <br>
+                  <input class=" age" type="number" id="age" name="age" min="18" max="65" required>
+              </div>
+              <div>
+                  <label for="about">Tell us a little about yourself <small>(optional)</small></label>
+                  <textarea class="borderChange2" id="about" name="about"
+            rows="3" cols="30">
+                  </textarea> 
+                  <br>
+                  <div class="tacbox">
+                      <input class="ok" id="checkbox" type="checkbox" required/>
+                      <label class="check" for="checkbox"> I agree with Terms & Conditions    
+                      </label>
+                    </div>
+                      
+            <div class="form-example">
+              <input class="submit" type="submit" value="Register">
+            </div>
+      </form>
+    </main>
+    <script src="./register.js"></script>
+  </body>
+</html>
