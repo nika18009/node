@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header >
+        <nav>
+         <a href="membership.html">Membership</a>
+         <a id="usersColor" href="userManagement.html">Users</a>
+        </nav>     
+     </header>
+    <main>
+        <div class="flex spaceBetween">
+            <div>
+                <h2>Create User</h2>
+            </div>
+        </div> 
+        <div id="cardSection" class="flex, formSection">
+            <form action="" >
+                <div class="wrapper inputBox">
+                    <div class="form-example">
+                        <label for="name">First Name <span>*</span></label> <br>
+                        <input class="name" type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-example">
+                        <label for="surname">Last Name <span>*</span></label><br>
+                        <input class="surname" type="text" id="surname" name="surname" required>
+                    </div>
+                    <div>
+                        <label for="email">Email adress <span>*</span></label><br>
+                        <input class="borderChange invalidValid" type="email" id="email" name="email"  required>
+                    </div>
+                    <div>
+                        <label for="membership">Choose Membership:</label><br>
+                        <select id="membership" name="membership">
+                        </select>    
+                    </div>      
+                </div>
+                
+                <div class="form-example, formButtons ">
+                    <input class="cancel" type="submit" name="submit" value="Cancel" formnovalidate>
+                    <input class="submit" type="submit" value="New User">
+                </div>
+            </form>
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy; Copyright 2021 Membership Manager</p>
+    </footer>
+    <script src="./createUser.js"></script>
+  </body>
+</html>

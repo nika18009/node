@@ -67,12 +67,12 @@ app.get('/movies/sort/:type', async (req, res) => {
 
 app.post('/movies', async (req, res) => {
   try {
-    const restaurant = req.body;
+    const movie = req.body;
     const con = await client.connect();
     const data = await con
       .db('ManoDuomenuBaze')
       .collection('Movies')
-      .insertOne(restaurant);
+      .insertOne(movie);
     await con.close();
     res.send(data);
   } catch (error) {

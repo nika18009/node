@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <script src="https://kit.fontawesome.com/3c5a9ad46f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header >
+       <nav>
+        <a id="membershipColor" href="membership.html">Membership</a>
+        <a href="userManagement.html">Users</a>
+       </nav>     
+    </header>
+    <main >
+        <section>
+            <div class="flex spaceBetween">
+                <div>
+                    <h2>Create Memebership</h2>
+                </div>
+                     
+            </div>
+            <div id="cardSection" class="formSection">
+                <form action="" class="flexT">
+                    <div class="testing">
+                        <table>
+                            <tr>
+                                <td class="right">
+                                    <label for="name">Name</label>
+                                </td>
+                                <td class="left">
+                                    <input class="name" type="text" id="name" name="name" placeholder="Name" style="padding-left: 10px;" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="right">
+                                    <label for="price">Membership price</label>
+                                </td>
+                                <td class="left">
+                                    <input class="borderChange invalidValid" type="number" id="price" name="price" placeholder="$ Membership price" style="padding-left: 10px;" step="0.01"  required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="right">
+                                    <label for="description">Description</label>
+                                </td>
+                                <td class="left">
+                                    <textarea class="borderChange2" id="description" name="description" rows="4" cols="30" required>
+                                    </textarea>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="formButtons">
+                        <input class="cancel" type="submit" name="submit" value="Cancel" formnovalidate>
+                        <input class="submit" type="submit" value="New Membership">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main >
+    <footer>
+        <p>&copy; Copyright 2021 Membership Manager</p>
+    </footer>
+    <script src="./createMembership.js"></script>
+</body>
+</html>

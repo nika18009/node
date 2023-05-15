@@ -23,10 +23,14 @@ function showMessage(data){
     console.log(data.message)
     const message = document.createElement("h3");
     if (data.message == "Sveiki prisijungę"){
-        alert(`${data.message}`)
+        document.querySelector("p").style.cssText = "display: none";
+        mainForm.reset();
+        setTimeout(function () {
+            alert(`${data.message}`)
+        }, 500);
     } else{
         message.textContent = `${data.message}`;
     message.style.cssText = "color:red"
-   mainForm.append(message)
+   document.querySelector("p").append(message)
     }  
 }

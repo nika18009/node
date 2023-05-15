@@ -16,7 +16,7 @@ mainForm.addEventListener("submit", (event)=>{
         "Content-Type": "application/json" 
     }, 
     body: JSON.stringify({passwordInput,emailInput,nameInput}) 
-})
+    })
 .then(()=>{
     // location.reload()
     fetch("http://127.0.0.1:5500/3_paskaita_uzduotis/index.html")
